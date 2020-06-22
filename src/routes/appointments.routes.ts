@@ -5,9 +5,6 @@ import { parseISO } from 'date-fns';
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
 import CreateAppointmentService from '../services/CreateAppointmentService';
 
-// SoC - Separation of Concerns = Separação de Preocupações
-// DTO - Data Transfer Object = Passar informação de um arquivo para outro
-
 const appointmentsRouter = Router();
 
 appointmentsRouter.get('/', async (request, response) => {
