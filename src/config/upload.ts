@@ -1,6 +1,5 @@
 import path from 'path';
 import multer from 'multer';
-import { request } from 'express';
 import crypto from 'crypto';
 
 const tempFolder = path.resolve(__dirname, '..', '..', 'tmp');
