@@ -20,10 +20,14 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "@typescript-eslint/camelcase":"off",
-    "@typescript-eslint/no-unused-vars": ["error", {
+    "class-methods-use-this": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
         "argsIgnorePattern": "_"
-      }],
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
