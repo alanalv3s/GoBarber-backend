@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { getRepository } from 'typeorm';
 import path from 'path';
 import fs from 'fs';

@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { MigrationInterface, QueryRunner, TableColumn } from 'typeorm';
 
 export default class AddAvatarFieldToUsers1592922867306

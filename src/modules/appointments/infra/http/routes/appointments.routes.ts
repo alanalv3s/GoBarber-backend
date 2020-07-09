@@ -10,7 +10,7 @@ const appointmentsRouter = Router();
 
 appointmentsRouter.use(ensureAuth);
 
-appointmentsRouter.get('/', async (request, response) => {
+appointmentsRouter.get('/', async (_, response) => {
   const appointmentsRepository = getCustomRepository(AppointmentsRepository);
   const appointments = await appointmentsRepository.find();
 
