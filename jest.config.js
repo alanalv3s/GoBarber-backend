@@ -1,5 +1,4 @@
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
-const { transpileModule } = require('typescript');
 const { compilerOptions } = require('./tsconfig.json')
 
 // For a detailed explanation regarding each configuration property, visit:
@@ -30,9 +29,9 @@ module.exports = {
   coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  coveragePathIgnorePatterns: [
+    "/node_modules/"
+  ],
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
