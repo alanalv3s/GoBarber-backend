@@ -11,6 +11,7 @@
 - O envio de e-mails deve acontecer em segundo plano (background job - filas)
 
 **RN**
+- O usuário deve ser informado se não tiver e-mail cadastrado
 - O link enviado por email para resetar senha, deve expirar em 2h
 - O usuário precisa confirmar a nova senha ao resetá-la
 
