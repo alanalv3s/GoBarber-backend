@@ -15,7 +15,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
 
 app.use(
@@ -27,12 +27,12 @@ app.use(
       });
     }
 
+    console.error(error);
+
     return response.status(500).json({
       status: 'error',
       message: 'Internal Server Error',
     });
-
-    console.error(error);
   },
 );
 
