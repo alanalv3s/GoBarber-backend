@@ -43,8 +43,6 @@ class CreateUserService {
 
     await this.cacheProvider.invalidatePrefix('providers-list');
 
-    console.log('Cache invalidado');
-
     return user;
   }
 }
